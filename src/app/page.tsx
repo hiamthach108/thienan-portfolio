@@ -1,13 +1,13 @@
-import Link from 'next/link';
-
+import HomeAchievement from '@/components/features/home/HomeAchievement';
 import HomeHero from '@/components/features/home/HomeHero';
+import HomeProject from '@/components/features/home/HomeProject';
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
-      <h1>NextJS Boilerplate</h1>
+    <div className="">
       <HomeHero />
-      <Link href={'/health-check'}>Check</Link>
+      <HomeAchievement />
+      <HomeProject />
     </div>
   );
 }

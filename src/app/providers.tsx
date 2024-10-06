@@ -1,7 +1,13 @@
 import React from 'react';
 
+import { LazyMotion, domAnimation } from 'framer-motion';
+
 const AppProvider = ({ children }: { children: React.ReactNode }) => {
-  return <>{children}</>;
+  return (
+    <>
+      <LazyMotion features={domAnimation}>{children}</LazyMotion>
+    </>
+  );
 };
 
 export default AppProvider;
