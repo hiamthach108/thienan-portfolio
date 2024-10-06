@@ -4,7 +4,7 @@ import HomeProject from '@/components/features/home/HomeProject';
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="w-full overflow-hidden">
       <HomeHero />
       <HomeAchievement />
       <HomeProject />

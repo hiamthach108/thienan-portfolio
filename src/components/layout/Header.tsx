@@ -6,6 +6,9 @@ import { usePathname } from 'next/navigation';
 import { IconMenu, IconX } from '@tabler/icons-react';
 import { useState } from 'react';
 
+import AnimFade from '../features/animation/AnimFade';
+import AnimSlide from '../features/animation/AnimSlide';
+
 const NAV_LINKS = [
   {
     id: 'home',
@@ -73,7 +76,10 @@ const Header = () => {
       </header>
 
       {isMenuOpen && (
-        <div className="fixed top-0 right-0 left-0 bg-bg h-screen w-full z-50">
+        <AnimSlide
+          direction="right"
+          className="fixed top-0 right-0 left-0 bg-bg h-screen w-full z-50"
+        >
           <div className="flex justify-end p-4">
             <IconX
               size={32}
@@ -99,7 +105,7 @@ const Header = () => {
               </Link>
             ))}
           </div>
-        </div>
+        </AnimSlide>
       )}
     </>
   );
