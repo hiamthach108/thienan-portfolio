@@ -6,17 +6,17 @@ import AnimSlide from '../animation/AnimSlide';
 
 const AboutGoal = () => {
   return (
-    <div className="w-full pt-16">
-      <div className="fluid-container flex gap-10 items-center 2xl:px-24 relative justify-end mb-10">
-        <div className="w-[50%] absolute left-[6%] top-1/2 -translate-y-1/2 z-20">
-          <AnimSlide direction="left" className="flex-1 bg-white p-8 shadow-2xl ">
-            <p className="text-justify text-lg mb-3 font-normal text-gray-600 italic">
+    <div className="w-full pt-10 md:pt-16">
+      <div className="fluid-container flex flex-col-reverse md:flex-row gap-3 md:gap-10 items-center 2xl:px-24 relative justify-end mb-10">
+        <div className="w-full md:w-[50%] md:absolute left-[6%] top-1/2 md:-translate-y-1/2 z-20">
+          <AnimSlide direction="left" className="flex-1 bg-white p-3 xl:p-8 shadow-2xl ">
+            <p className="text-justify text-base xl:text-lg mb-3 font-normal text-gray-600 italic">
               &quot;In the near future, I aim to become an economic consultant at top
               companies, where I can contribute to strategic direction, optimize business
               processes, and promote sustainable development. I will always strive to
               learn, train, and develop extensive expertise in this field.
             </p>
-            <p className='className="text-justify text-lg font-normal text-gray-600 italic'>
+            <p className='className="text-justify text-base xl:text-lg font-normal text-gray-600 italic'>
               With a strong passion for the business sector, I am always ready to face
               challenges, thereby accumulating practical experience and solid management
               knowledge. Once I have the capability and understanding, I will realize my
@@ -27,7 +27,7 @@ const AboutGoal = () => {
           </AnimSlide>
         </div>
 
-        <AnimSlide direction="right" className="w-[50%]">
+        <AnimSlide direction="right" className="w-full md:w-[50%]">
           <Image
             src={'/about-me/5.jpg'}
             width={1200}
