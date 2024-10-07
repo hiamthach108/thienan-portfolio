@@ -19,24 +19,28 @@ const AboutIntro = () => {
             />
           </AnimFade>
           <div className="flex flex-col gap-6 flex-1">
-            <Image
-              src={'/about-me/3.jpg'}
-              width={300}
-              height={400}
-              alt="About me 1"
-              className="w-full h-auto object-center object-contain rounded-lg"
-            />
-            <Image
-              src={'/about-me/4.jpg'}
-              width={300}
-              height={400}
-              alt="About me 1"
-              className="w-full h-auto object-center object-contain rounded-lg"
-            />
+            <AnimFade direction="down">
+              <Image
+                src={'/about-me/3.jpg'}
+                width={300}
+                height={400}
+                alt="About me 1"
+                className="w-full h-auto object-center object-contain rounded-lg"
+              />
+            </AnimFade>
+            <AnimFade direction="up" delay={0.1}>
+              <Image
+                src={'/about-me/4.jpg'}
+                width={300}
+                height={400}
+                alt="About me 2"
+                className="w-full h-auto object-center object-contain rounded-lg"
+              />
+            </AnimFade>
           </div>
         </div>
 
-        <div className="flex-1 text-left">
+        <AnimFade direction="right" className="flex-1 text-left">
           <h1 className="section-heading mb-6">A Brief Introduction</h1>
           <p className="text-base text-gray-800 text-justify">
             My name is Nguyễn Cao Thiên Ân, I was born on March 9, 2007, and I am
@@ -55,7 +59,7 @@ const AboutIntro = () => {
             Asia International School is where I can maximize my abilities, continually
             learn and improve myself, and open up future development opportunities.
           </p>
-        </div>
+        </AnimFade>
       </div>
     </div>
   );

@@ -8,21 +8,23 @@ const AboutGoal = () => {
   return (
     <div className="w-full pt-16">
       <div className="fluid-container flex gap-10 items-center 2xl:px-24 relative justify-end mb-10">
-        <div className="flex-1 bg-white p-8 shadow-2xl w-[50%] absolute left-[6%] top-1/2 -translate-y-1/2 z-20">
-          <p className="text-justify text-lg mb-3 font-normal text-gray-600 italic">
-            &quot;In the near future, I aim to become an economic consultant at top
-            companies, where I can contribute to strategic direction, optimize business
-            processes, and promote sustainable development. I will always strive to learn,
-            train, and develop extensive expertise in this field.
-          </p>
-          <p className='className="text-justify text-lg font-normal text-gray-600 italic'>
-            With a strong passion for the business sector, I am always ready to face
-            challenges, thereby accumulating practical experience and solid management
-            knowledge. Once I have the capability and understanding, I will realize my
-            bigger dream: to build and run my own business, with a vision to create
-            long-term value for society and contribute positively to the development of
-            the economy.&quot;
-          </p>
+        <div className="w-[50%] absolute left-[6%] top-1/2 -translate-y-1/2 z-20">
+          <AnimSlide direction="left" className="flex-1 bg-white p-8 shadow-2xl ">
+            <p className="text-justify text-lg mb-3 font-normal text-gray-600 italic">
+              &quot;In the near future, I aim to become an economic consultant at top
+              companies, where I can contribute to strategic direction, optimize business
+              processes, and promote sustainable development. I will always strive to
+              learn, train, and develop extensive expertise in this field.
+            </p>
+            <p className='className="text-justify text-lg font-normal text-gray-600 italic'>
+              With a strong passion for the business sector, I am always ready to face
+              challenges, thereby accumulating practical experience and solid management
+              knowledge. Once I have the capability and understanding, I will realize my
+              bigger dream: to build and run my own business, with a vision to create
+              long-term value for society and contribute positively to the development of
+              the economy.&quot;
+            </p>
+          </AnimSlide>
         </div>
 
         <AnimSlide direction="right" className="w-[50%]">
