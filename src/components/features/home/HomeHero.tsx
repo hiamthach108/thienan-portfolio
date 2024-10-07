@@ -6,7 +6,7 @@ import AnimFade from '../animation/AnimFade';
 
 const HomeHero = () => {
   return (
-    <div className="fluid-container flex items-center  2xl:max-w-[1640px] 2xl:pr-11 overflow-hidden">
+    <div className="fluid-container flex items-center 2xl:max-w-[1640px] 2xl:pr-11 overflow-hidden">
       <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-10 xl:pl-12 max-md:px-3">
         <AnimFade direction="up" className="md:w-[40%] lg:w-1/3">
           <Image

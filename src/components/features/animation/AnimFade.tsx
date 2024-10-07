@@ -11,7 +11,7 @@ interface Props extends HTMLMotionProps<'div'> {
 
 const ANIM_DURATION = 1.3;
 const ANIM_EASE = [0.16, 1, 0.3, 1];
-const ANIM_NUMBER = 80;
+const ANIM_NUMBER = 50;
 
 const AnimFade = ({ children, direction, delay, ...rest }: Props) => {
   const x = direction === 'left' ? -ANIM_NUMBER : direction === 'right' ? ANIM_NUMBER : 0;

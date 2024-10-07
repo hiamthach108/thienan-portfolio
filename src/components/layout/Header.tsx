@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full bg-bg sticky top-0 left-0 z-10">
+      <header className="w-full bg-bg sticky top-0 left-0 z-50">
         <div className="hidden fluid-container md:flex items-center justify-between">
           <div className="w-1/5 flex gap-2 items-center"></div>
           <div className="w-3/5 text-center">

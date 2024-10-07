@@ -31,4 +31,8 @@
   .underline-after {
     @apply relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[1.3px] after:w-full after:bg-gray-700 after:content-[''];
   }
+
+  .section-heading-hand {
+    @apply max-[350px]:text-6xl text-7xl lg:text-8xl text-primary font-hand tracking-wider max-md:text-center;
+  }
 }
