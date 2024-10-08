@@ -2,6 +2,10 @@ import { Metadata } from 'next';
 
 import React from 'react';
 
+import HobbiesIntro from '@/components/features/my-hobbies/HobbiesIntro';
+import HobbiesProjects from '@/components/features/my-hobbies/HobbiesProjects';
+import HobbiesSports from '@/components/features/my-hobbies/HobbiesSports';
+
 import { APP_NAME } from '@/config/constants/env.const';
 
 export const metadata: Metadata = {
@@ -11,8 +15,10 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <div className="min-h-screen text-center">
-      <h1 className="section-heading underline-after">My Hobbies</h1>
+    <div className="min-h-screen text-center relative overflow-hidden">
+      <HobbiesIntro />
+      <HobbiesProjects />
+      <HobbiesSports />
     </div>
   );
 };
