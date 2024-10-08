@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <div className="min-h-screen text-center relative overflow-hidden">
+    <div className="min-h-screen text-center relative">
       <HobbiesIntro />
       <HobbiesProjects />
       <HobbiesSports />
