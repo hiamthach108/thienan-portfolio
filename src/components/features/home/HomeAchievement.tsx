@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import React from 'react';
 
@@ -26,7 +27,9 @@ const HomeAchievement = () => {
             className="aspect-square h-auto object-cover object-center w-28"
           />
 
-          <Btn>EXPLORE</Btn>
+          <Link href="/achievements">
+            <Btn>EXPLORE</Btn>
+          </Link>
         </AnimSlide>
         <AnimSlide
           direction="right"
@@ -41,8 +44,9 @@ const HomeAchievement = () => {
             height={300}
             className="aspect-square h-auto object-cover object-center w-28"
           />
-
-          <Btn>EXPLORE</Btn>
+          <Link href="/my-hobbies">
+            <Btn>EXPLORE</Btn>
+          </Link>
         </AnimSlide>
       </div>
     </div>

@@ -9,10 +9,7 @@ const HobbiesSports = () => {
     <div className="w-full">
       <div className="fluid-container pb-16">
         <h2 className="section-heading text-center">​MY FAVORITE SPORTS</h2>
-        <AnimSlide
-          direction="left"
-          className="flex-1 bg-white p-3 xl:p-8 shadow-2xl mt-6"
-        >
+        <AnimSlide direction="up" className="flex-1 bg-white p-3 xl:p-8 shadow-2xl mt-6">
           <div className="flex gap-6 items-center  flex-col">
             <div className="flex-1 text-justify">
               <p className="">
