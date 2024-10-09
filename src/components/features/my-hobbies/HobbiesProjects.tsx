@@ -115,7 +115,7 @@ const HobbiesProjects = () => {
         className="mx-auto"
       />
 
-      <div className="flex gap-10 max-w-[1024px] mx-auto mt-10 w-full relative">
+      <div className="max-md:hidden flex gap-10 max-w-[1024px] mx-auto mt-10 w-full relative">
         <div className="w-1/3 text-left h-screen sticky top-0">
           <div className="sticky top-[200px] left-0 z-10 w-full">
             <h5 className="section-heading-hand">0{active.id}</h5>
@@ -134,10 +134,10 @@ const HobbiesProjects = () => {
         {projects.map((p) => {
           return (
             <div
-              className="flex flex-col md:flex-row gap-6 md:gap-10 w-full py-5"
+              className="flex flex-col md:flex-row gap-2 md:gap-10 w-full py-5"
               key={p.id}
             >
-              <div className="w-full md:w-1/3 text-left sticky top-0 left-0">
+              <div className="w-full md:w-1/3 text-left">
                 <h5 className="section-heading-hand">0{p.id}</h5>
                 <h6 className="text-xl font-heading">{p.title}</h6>
                 <p className="text-base">{p.description}</p>
