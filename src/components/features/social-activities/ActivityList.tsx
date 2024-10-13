@@ -2,6 +2,8 @@ import React from 'react';
 
 import ImgCarousel from '@/components/shared/ImgCarousel';
 
+import AnimFade from '../animation/AnimFade';
+
 import clsx from 'clsx';
 
 const list: {
@@ -118,10 +120,16 @@ const ActivityList = () => {
           return (
             <div key={item.id} className={clsx('w-full', i % 2 !== 0 && 'bg-white')}>
               <div className="flex flex-col gap-4 py-6 md:py-16 fluid-container ">
-                <h2 className="section-heading w-fit mx-auto text-center">
-                  {item.title}
-                </h2>
-                <div className="flex flex-col gap-2 w-full xl:max-w-[80%] text-justify xl:w-fit mx-auto mb-3 md:mb-6">
+                <AnimFade direction="up">
+                  <h2 className="section-heading w-fit mx-auto text-center">
+                    {item.title}
+                  </h2>
+                </AnimFade>
+                <AnimFade
+                  direction="up"
+                  delay={0.1}
+                  className="flex flex-col gap-2 w-full xl:max-w-[80%] text-justify xl:w-fit mx-auto mb-3 md:mb-6"
+                >
                   {item.content.map((content, index) => {
                     return (
                       <p key={index} className="text-sm md:text-base">
@@ -129,7 +137,7 @@ const ActivityList = () => {
                       </p>
                     );
                   })}
-                </div>
+                </AnimFade>
                 <ImgCarousel images={item.images || []} />
               </div>
             </div>

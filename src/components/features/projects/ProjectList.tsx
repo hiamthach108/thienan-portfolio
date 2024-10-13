@@ -5,6 +5,8 @@ import React from 'react';
 import ImgCarousel from '@/components/shared/ImgCarousel';
 import MyCarousel from '@/components/shared/MyCarousel';
 
+import AnimFade from '../animation/AnimFade';
+
 const projectCommunication = [
   {
     id: 1,
@@ -49,7 +51,7 @@ const ProjectList = () => {
     <div className="w-full flex flex-col">
       <div className="fluid-container py-6 md:py-10">
         <div className="mt-6 md:mt-10 flex flex-col-reverse md:flex-row gap-4 md:gap-10 items-center">
-          <div className="text-justify flex flex-col gap-1">
+          <AnimFade direction="left" className="text-justify flex flex-col gap-1 flex-1">
             <h2 className="section-heading md:mb-4 text-center">Mush-Room Of Love</h2>
             <p>
               The Mush-Room of Love project is a personal initiative aimed at supporting
@@ -74,28 +76,32 @@ const ProjectList = () => {
               environment but also spreads love and compassion to those in need, opening
               opportunities and hope for the children.💖
             </p>
-          </div>
-          <Image
-            src={'/projects/mushroomoflove.jpg'}
-            width={600}
-            height={600}
-            alt="Mush-Room Of Love"
-            className="max-[400px]:w-full w-1/2 md:w-1/3 h-auto aspect-square rounded-xl object-cover object-center shadow-md"
-          />
+          </AnimFade>
+          <AnimFade direction="right" className="max-[400px]:w-full w-1/2 md:w-1/3">
+            <Image
+              src={'/projects/mushroomoflove.jpg'}
+              width={600}
+              height={600}
+              alt="Mush-Room Of Love"
+              className="w-full h-auto aspect-square rounded-xl object-cover object-center shadow-md"
+            />
+          </AnimFade>
         </div>
       </div>
 
       <div className="bg-white py-6 md:py-10">
         <div className="fluid-container flex gap-4 md:gap-8 flex-col md:flex-row items-center">
-          <Image
-            src={'/projects/17.jpg'}
-            width={600}
-            height={600}
-            alt="Mush-Room Of Love"
-            className="h-auto w-full md:w-[36%] object-cover object-center"
-          />
+          <AnimFade direction="right" className="w-full md:w-[36%]">
+            <Image
+              src={'/projects/17.jpg'}
+              width={600}
+              height={600}
+              alt="Mush-Room Of Love"
+              className="h-auto w-full object-cover object-center"
+            />
+          </AnimFade>
 
-          <div className="text-justify flex-1 flex flex-col gap-2">
+          <AnimFade direction="up" className="text-justify flex-1 flex flex-col gap-2">
             <h3 className="section-heading mb-4">
               MUSHROOM FUNDRAISING PROJECT – CHARITY
             </h3>
@@ -112,35 +118,41 @@ const ProjectList = () => {
               contribution, big or small, has significant value for the project and the
               community at large.
             </p>
-          </div>
+          </AnimFade>
         </div>
       </div>
 
       <div className="fluid-container py-6 md:py-10">
-        <h3 className="section-heading mb-4 text-center">FARMING EXPERIENCE</h3>
+        <AnimFade direction="up">
+          <h3 className="section-heading mb-4 text-center">FARMING EXPERIENCE</h3>
+        </AnimFade>
         <div className="text-justify flex flex-col gap-2">
-          <p>
-            From the moment I first stepped onto the farm, I was captivated by the lush
-            and soothing atmosphere, where hundreds of mushroom beds of all kinds were
-            flourishing. I personally chose growing mushroom beds, gently watering them,
-            and it felt as if I was transmitting a strong life energy from mother earth to
-            each mushroom sprout. 🌱 The mushroom farming experience not only brought
-            endless joy but also helped me deeply understand patience and how to connect
-            with nature. After tending to them and watching the mushrooms grow like my
-            &apos;little children,&apos; the feeling was truly heartwarming and full of
-            anticipation! ✨
-          </p>
-          <p>
-            The organic mushroom cultivation process was also fascinating, from preparing
-            the substrate using natural materials like straw and sawdust to create a
-            living environment for the mushrooms. After sterilizing the substrate to
-            eliminate unwanted bacteria, I inoculated it with mushroom spores. The care
-            process was continuous, watering and monitoring the humidity and temperature
-            to create ideal conditions for the mushrooms to thrive. Finally, when the
-            mushrooms reached the desired size, I harvested and stored them properly, not
-            only to enjoy but to fully appreciate the love for nature through each
-            mushroom I had nurtured.&quot;
-          </p>
+          <AnimFade direction="up" delay={0.1}>
+            <p>
+              From the moment I first stepped onto the farm, I was captivated by the lush
+              and soothing atmosphere, where hundreds of mushroom beds of all kinds were
+              flourishing. I personally chose growing mushroom beds, gently watering them,
+              and it felt as if I was transmitting a strong life energy from mother earth
+              to each mushroom sprout. 🌱 The mushroom farming experience not only brought
+              endless joy but also helped me deeply understand patience and how to connect
+              with nature. After tending to them and watching the mushrooms grow like my
+              &apos;little children,&apos; the feeling was truly heartwarming and full of
+              anticipation! ✨
+            </p>
+          </AnimFade>
+          <AnimFade direction="up" delay={0.13}>
+            <p>
+              The organic mushroom cultivation process was also fascinating, from
+              preparing the substrate using natural materials like straw and sawdust to
+              create a living environment for the mushrooms. After sterilizing the
+              substrate to eliminate unwanted bacteria, I inoculated it with mushroom
+              spores. The care process was continuous, watering and monitoring the
+              humidity and temperature to create ideal conditions for the mushrooms to
+              thrive. Finally, when the mushrooms reached the desired size, I harvested
+              and stored them properly, not only to enjoy but to fully appreciate the love
+              for nature through each mushroom I had nurtured.&quot;
+            </p>
+          </AnimFade>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 w-full mt-4">
             {[
@@ -149,14 +161,16 @@ const ProjectList = () => {
               '/projects/18.jpg',
               '/projects/19.jpg',
             ].map((img, idx) => (
-              <Image
-                key={idx}
-                src={img}
-                width={400}
-                height={400}
-                alt="Mush-Room Of Love"
-                className="h-auto w-full object-cover object-center"
-              />
+              <AnimFade key={idx} direction="up" delay={0.1 * idx}>
+                <Image
+                  key={idx}
+                  src={img}
+                  width={400}
+                  height={400}
+                  alt="Mush-Room Of Love"
+                  className="h-auto w-full object-cover object-center"
+                />
+              </AnimFade>
             ))}
           </div>
         </div>
@@ -185,55 +199,65 @@ const ProjectList = () => {
       </div>
 
       <div className="fluid-container">
-        <h3 className="section-heading text-center">
-          &quot;JOYFUL SUMMER TUNES&quot; PROJECT
-        </h3>
+        <AnimFade direction="up">
+          <h3 className="section-heading text-center">
+            &quot;JOYFUL SUMMER TUNES&quot; PROJECT
+          </h3>
+        </AnimFade>
         <div className="mt-4 text-justify flex flex-col gap-2">
-          <p>
-            From the very first moment I stepped onto the farm, I was captivated by the
-            lush, soothing environment, where hundreds of mushroom beds of various types
-            were in full bloom. I personally selected growing mushroom beds, gently
-            watered them, and felt as if I was transmitting a powerful life energy from
-            mother earth to each mushroom sprout. 🌱 The mushroom farming experience not
-            only brought endless joy but also allowed me to deeply understand patience and
-            how to connect with nature. Tending to them and watching the mushrooms grow
-            like my &apos;little children&apos; was a truly heartwarming and
-            full-of-anticipation experience! ✨
-          </p>
-
-          <h6 className="text-xl text-primary">Organic mushroom cultivation process:</h6>
-          <ul className="pl-6 mb-4">
-            <li>
-              Preparing the space: Create a lush, airy environment for growing mushrooms,
-              with soft light and the right humidity.
-            </li>
-            <li>
-              Choosing materials: Select natural materials like straw, sawdust, or coffee
-              grounds as substrates for the mushrooms.
-            </li>
-            <li>
-              Sterilizing the substrate: Sterilize the substrate with steam or high
-              temperatures to eliminate unwanted bacteria and molds.
-            </li>
-            <li>
-              Inoculating the mushrooms: Once the substrate has cooled, gently inoculate
-              it with mushroom spores, ensuring an even distribution for balanced growth.
-            </li>
-            <li>
-              Keep the mushrooms healthy: Regularly water to maintain humidity, and
-              monitor the air temperature and moisture to create ideal conditions for
-              mushroom development.
-            </li>
-            <li>
-              Monitoring growth: Observe the mushrooms’ growth like &apos;little
-              children,&apos; feeling the joy and connection with nature.
-            </li>
-            <li>
-              Harvesting the mushrooms: When they reach the desired size, carefully
-              harvest them, and feel the happiness of seeing the fully grown mushroom
-              beds.
-            </li>
-          </ul>
+          <AnimFade direction="up" delay={0.1}>
+            <p>
+              From the very first moment I stepped onto the farm, I was captivated by the
+              lush, soothing environment, where hundreds of mushroom beds of various types
+              were in full bloom. I personally selected growing mushroom beds, gently
+              watered them, and felt as if I was transmitting a powerful life energy from
+              mother earth to each mushroom sprout. 🌱 The mushroom farming experience not
+              only brought endless joy but also allowed me to deeply understand patience
+              and how to connect with nature. Tending to them and watching the mushrooms
+              grow like my &apos;little children&apos; was a truly heartwarming and
+              full-of-anticipation experience! ✨
+            </p>
+          </AnimFade>
+          <AnimFade direction="up" delay={0.13}>
+            <h6 className="text-xl text-primary">
+              Organic mushroom cultivation process:
+            </h6>
+          </AnimFade>
+          <AnimFade direction="up" delay={0.16}>
+            <ul className="pl-6 mb-4">
+              <li>
+                Preparing the space: Create a lush, airy environment for growing
+                mushrooms, with soft light and the right humidity.
+              </li>
+              <li>
+                Choosing materials: Select natural materials like straw, sawdust, or
+                coffee grounds as substrates for the mushrooms.
+              </li>
+              <li>
+                Sterilizing the substrate: Sterilize the substrate with steam or high
+                temperatures to eliminate unwanted bacteria and molds.
+              </li>
+              <li>
+                Inoculating the mushrooms: Once the substrate has cooled, gently inoculate
+                it with mushroom spores, ensuring an even distribution for balanced
+                growth.
+              </li>
+              <li>
+                Keep the mushrooms healthy: Regularly water to maintain humidity, and
+                monitor the air temperature and moisture to create ideal conditions for
+                mushroom development.
+              </li>
+              <li>
+                Monitoring growth: Observe the mushrooms’ growth like &apos;little
+                children,&apos; feeling the joy and connection with nature.
+              </li>
+              <li>
+                Harvesting the mushrooms: When they reach the desired size, carefully
+                harvest them, and feel the happiness of seeing the fully grown mushroom
+                beds.
+              </li>
+            </ul>
+          </AnimFade>
 
           <ImgCarousel
             images={[
