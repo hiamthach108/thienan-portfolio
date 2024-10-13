@@ -21,6 +21,10 @@ const list: {
       '/social-activities/16.jpg',
       '/social-activities/17.jpg',
       '/social-activities/18.jpg',
+      '/social-activities/15.jpg',
+      '/social-activities/16.jpg',
+      '/social-activities/17.jpg',
+      '/social-activities/18.jpg',
     ],
   },
   {
@@ -30,6 +34,10 @@ const list: {
       `In Cu Chi, I participate in organizing activities for children, creating exercise sessions and a playground for underprivileged kids. Additionally, I have the opportunity to personally deliver small gifts to families in difficult circumstances. This has been a meaningful part of my journey.`,
     ],
     images: [
+      '/social-activities/15.jpg',
+      '/social-activities/16.jpg',
+      '/social-activities/17.jpg',
+      '/social-activities/18.jpg',
       '/social-activities/15.jpg',
       '/social-activities/16.jpg',
       '/social-activities/17.jpg',
@@ -49,6 +57,10 @@ const list: {
       '/social-activities/23.jpg',
       '/social-activities/24.jpg',
       '/social-activities/18.jpg',
+      '/social-activities/22.jpg',
+      '/social-activities/23.jpg',
+      '/social-activities/24.jpg',
+      '/social-activities/18.jpg',
     ],
   },
   {
@@ -59,6 +71,12 @@ const list: {
       'The most memorable moment was definitely catching fish in the canal. The whole group was laughing and cheering as each fish wriggled in our hands, and that feeling is truly unforgettable! ',
     ],
     images: [
+      '/social-activities/1.jpg',
+      '/social-activities/2.jpg',
+      '/social-activities/3.jpg',
+      '/social-activities/4.jpg',
+      '/social-activities/5.jpg',
+      '/social-activities/6.jpg',
       '/social-activities/1.jpg',
       '/social-activities/2.jpg',
       '/social-activities/3.jpg',
@@ -82,6 +100,12 @@ const list: {
       '/social-activities/10.jpg',
       '/social-activities/11.jpg',
       '/social-activities/12.jpg',
+      '/social-activities/7.jpg',
+      '/social-activities/8.jpg',
+      '/social-activities/9.jpg',
+      '/social-activities/10.jpg',
+      '/social-activities/11.jpg',
+      '/social-activities/12.jpg',
     ],
   },
 ];
@@ -94,7 +118,7 @@ const ActivityList = () => {
           return (
             <div key={item.id} className={clsx('w-full', i % 2 !== 0 && 'bg-white')}>
               <div className="flex flex-col gap-4 py-6 md:py-16 fluid-container ">
-                <h2 className="section-heading underline-after w-fit mx-auto text-center">
+                <h2 className="section-heading w-fit mx-auto text-center">
                   {item.title}
                 </h2>
                 <div className="flex flex-col gap-2 w-full xl:max-w-[80%] text-justify xl:w-fit mx-auto mb-3 md:mb-6">

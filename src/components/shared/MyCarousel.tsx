@@ -2,14 +2,14 @@
 
 import Image from 'next/image';
 
-import React, { useRef, useState } from 'react';
+import React, { ReactNode, useRef, useState } from 'react';
 import { Swiper, SwiperRef, SwiperSlide } from 'swiper/react';
 
 interface Props {
-  images: string[];
+  components: ReactNode[];
 }
 
-const ImgCarousel = ({ images }: Props) => {
+const MyCarousel = ({ components }: Props) => {
   const [current, setCurrent] = useState(0);
 
   const swiperRef = useRef<SwiperRef>(null);
@@ -27,7 +27,7 @@ const ImgCarousel = ({ images }: Props) => {
   };
 
   return (
-    <div className="w-full relative">
+    <div className="w-full h-auto">
       <Swiper
         ref={swiperRef}
         slidesPerView={1.2}
@@ -38,8 +38,8 @@ const ImgCarousel = ({ images }: Props) => {
             spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 3.3,
-            spaceBetween: 20,
+            slidesPerView: 4.2,
+            spaceBetween: 32,
           },
         }}
         loop={true}
@@ -51,14 +51,9 @@ const ImgCarousel = ({ images }: Props) => {
         tabIndex={current}
         onSlideChange={({ realIndex }) => setCurrent(realIndex)}
       >
-        {images.map((image, index) => (
-          <SwiperSlide key={index} className="relative w-full h-auto aspect-square">
-            <Image
-              src={image}
-              alt=""
-              className="w-full h-72 object-cover object-center"
-              fill={true}
-            />
+        {components.map((element, index) => (
+          <SwiperSlide key={index} className="w-full h-auto">
+            {element}
           </SwiperSlide>
         ))}
 
@@ -91,4 +86,4 @@ const ImgCarousel = ({ images }: Props) => {
   );
 };
 
-export default ImgCarousel;
+export default MyCarousel;

@@ -36,3 +36,7 @@
     @apply font-hand text-7xl tracking-wider text-primary max-md:text-center max-[350px]:text-6xl lg:text-8xl;
   }
 }
+
+.swiper-slide {
+  height: auto !important;
+}
