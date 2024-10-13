@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 
 import React from 'react';
 
+import ProjectList from '@/components/features/projects/ProjectList';
+
 import { APP_NAME } from '@/config/constants/env.const';
 
 export const metadata: Metadata = {
@@ -11,8 +13,10 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <div className="min-h-screen text-center">
-      <h1 className="section-heading underline-after">Personal Projects</h1>
+    <div className="min-h-screen text-center overflow-hidden">
+      <h1 className="section-heading-hand">Personal Projects</h1>
+
+      <ProjectList />
     </div>
   );
 };
