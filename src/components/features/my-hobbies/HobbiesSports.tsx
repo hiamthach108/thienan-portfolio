@@ -32,7 +32,7 @@ const HobbiesSports = () => {
             <div className="flex-1 grid gap-4 grid-cols-1 md:grid-cols-3">
               <AnimFade direction="up">
                 <Image
-                  src={'/hobbies/1.jpg'}
+                  src={'/hobbies/4.jpg'}
                   alt="hobbies"
                   width={400}
                   height={300}

@@ -3,10 +3,19 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import { IconMenu, IconX } from '@tabler/icons-react';
+import {
+  IconBrandYoutube,
+  IconBrandYoutubeFilled,
+  IconMail,
+  IconMailFilled,
+  IconMenu,
+  IconPhone,
+  IconX,
+} from '@tabler/icons-react';
 import { useState } from 'react';
 
-import AnimFade from '../features/animation/AnimFade';
+import { EMAIL, YOUTUBE } from '@/config/constants/social.const';
+
 import AnimSlide from '../features/animation/AnimSlide';
 
 const NAV_LINKS = [
@@ -29,7 +38,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full bg-bg sticky top-0 left-0 z-50">
+      <header className="w-full bg-bg sticky top-0 left-0 z-50 relative">
         <div className="hidden fluid-container md:flex items-center justify-between">
           <div className="w-1/5 flex gap-2 items-center"></div>
           <div className="w-3/5 text-center">
@@ -55,7 +64,7 @@ const Header = () => {
               ))}
             </div>
           </div>
-          <div className="w-1/5"></div>
+          <div className="w-1/5 "></div>
         </div>
 
         <div className="flex justify-between md:hidden p-3">
@@ -72,6 +81,20 @@ const Header = () => {
               setIsMenuOpen(true);
             }}
           />
+        </div>
+        <div className="absolute top-6 right-6 z-10 flex items-start justify-end gap-2 w-fit h-auto max-md:hidden ">
+          <Link href={`mailto:${EMAIL}`} target="_blank">
+            <IconMailFilled
+              size={28}
+              className="cursor-pointer text-primary hover:text-bg-sky"
+            />
+          </Link>
+          <Link href={YOUTUBE} target="_blank">
+            <IconBrandYoutubeFilled
+              size={28}
+              className="cursor-pointer text-primary hover:text-bg-sky"
+            />
+          </Link>
         </div>
       </header>
 
