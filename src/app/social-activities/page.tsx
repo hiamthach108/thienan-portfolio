@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <div className="min-h-screen text-center">
+    <div className="min-h-screen text-center page-container">
       <h1 className="section-heading-hand">Social Activities</h1>
 
       <ActivityList />

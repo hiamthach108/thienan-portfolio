@@ -41,9 +41,9 @@ const AboutIntro = () => {
         </div>
 
         <AnimFade direction="right" className="flex-1 text-left">
-          <h1 className="section-heading mb-3 md:mb-6">A Brief Introduction</h1>
+          <h1 className="section-heading mb-3 md:mb-6">Introduction</h1>
           <p className="text-sm md:text-base text-gray-800 text-justify">
-            My name is Nguyễn Cao Thiên Ân, I was born on March 9, 2007, and I am
+            My name is Nguyen Cao Thien An, I was born on March 9, 2007, and I am
             currently studying at Asia International School. At this school, with its
             advanced and challenging learning environment, I have had the opportunity to
             cultivate essential skills and develop myself comprehensively.

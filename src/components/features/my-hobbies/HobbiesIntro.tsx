@@ -1,25 +1,27 @@
 'use client';
 
-import Image from 'next/image';
-
+// import Image from 'next/image';
 import React from 'react';
 
-import AnimFade from '../animation/AnimFade';
+import VideoIntro from '@/components/shared/VideoIntro';
+
+// import AnimFade from '../animation/AnimFade';
+import AnimText from '../animation/AnimText';
 
 const HobbiesIntro = () => {
-  const handleScroll = () => {
-    const el = document.getElementById('hobbies-project');
-    // el?.scrollIntoView({ behavior: 'smooth' });
-    // scroll to view with offset of 100px
-    window.scrollTo({
-      top: (el?.offsetTop ?? 0) - 20,
-      behavior: 'smooth',
-    });
-  };
+  // const handleScroll = () => {
+  //   const el = document.getElementById('hobbies-project');
+  //   // el?.scrollIntoView({ behavior: 'smooth' });
+  //   // scroll to view with offset of 100px
+  //   window.scrollTo({
+  //     top: (el?.offsetTop ?? 0) - 20,
+  //     behavior: 'smooth',
+  //   });
+  // };
 
   return (
     <>
-      <div className="fluid-container pb-10 w-full min-h-[72vh]">
+      {/* <div className="fluid-container pb-10 w-full min-h-[72vh]">
         <h1 className="section-heading-hand text-center">My Hobbies</h1>
         <AnimFade
           direction="down"
@@ -54,7 +56,16 @@ const HobbiesIntro = () => {
             className=""
           />
         </div>
-      </div>
+      </div> */}
+
+      <VideoIntro>
+        <h1 className="absolute position-center w-fit whitespace-nowrap">
+          <AnimText
+            text="My Hobbies"
+            className="text-white font-heading uppercase text-3xl md:text-7xl tracking-wider"
+          />
+        </h1>
+      </VideoIntro>
     </>
   );
 };

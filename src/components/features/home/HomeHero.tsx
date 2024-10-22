@@ -6,7 +6,7 @@ import AnimFade from '../animation/AnimFade';
 
 const HomeHero = () => {
   return (
-    <div className="fluid-container flex items-center 2xl:max-w-[1640px] 2xl:pr-11 overflow-hidden">
+    <div className="fluid-container flex items-center 2xl:max-w-[1640px] 2xl:pr-11 overflow-hidden py-16">
       <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-10 xl:pl-12 max-md:px-3">
         <AnimFade direction="up" className="md:w-[40%] lg:w-1/3">
           <Image
@@ -20,8 +20,8 @@ const HomeHero = () => {
 
         <div className="">
           <AnimFade direction="up" delay={0.1}>
-            <h3 className="max-[350px]:text-6xl text-7xl lg:text-8xl text-primary font-hand tracking-wider max-md:text-center">
-              Describe myself
+            <h3 className="text-center max-[350px]:text-6xl text-7xl lg:text-8xl text-primary font-heading tracking-[16px]">
+              VITAL
             </h3>
           </AnimFade>
 

@@ -154,70 +154,6 @@ const ProjectList = () => {
             </p>
           </AnimFade>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 w-full mt-4">
-            {[
-              '/projects/14.jpg',
-              '/projects/15.jpg',
-              '/projects/18.jpg',
-              '/projects/19.jpg',
-            ].map((img, idx) => (
-              <AnimFade key={idx} direction="up" delay={0.1 * idx}>
-                <Image
-                  key={idx}
-                  src={img}
-                  width={400}
-                  height={400}
-                  alt="Mush-Room Of Love"
-                  className="h-auto w-full object-cover object-center"
-                />
-              </AnimFade>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-white py-6 md:py-10">
-        <MyCarousel
-          components={projectCommunication.map((project) => (
-            <div
-              key={project.id}
-              className="block bg-white rounded-[4px] overflow-hidden w-full h-full"
-            >
-              <Image
-                src={project.img}
-                width={400}
-                height={400}
-                alt="Mush-Room Of Love"
-                className="h-auto w-full object-cover object-center"
-              />
-              <div className="px-4 py-2">
-                <p className="text-sm text-justify">{project.content}</p>
-              </div>
-            </div>
-          ))}
-        />
-      </div>
-
-      <div className="fluid-container">
-        <AnimFade direction="up">
-          <h3 className="section-heading text-center">
-            &quot;JOYFUL SUMMER TUNES&quot; PROJECT
-          </h3>
-        </AnimFade>
-        <div className="mt-4 text-justify flex flex-col gap-2">
-          <AnimFade direction="up" delay={0.1}>
-            <p>
-              From the very first moment I stepped onto the farm, I was captivated by the
-              lush, soothing environment, where hundreds of mushroom beds of various types
-              were in full bloom. I personally selected growing mushroom beds, gently
-              watered them, and felt as if I was transmitting a powerful life energy from
-              mother earth to each mushroom sprout. 🌱 The mushroom farming experience not
-              only brought endless joy but also allowed me to deeply understand patience
-              and how to connect with nature. Tending to them and watching the mushrooms
-              grow like my &apos;little children&apos; was a truly heartwarming and
-              full-of-anticipation experience! ✨
-            </p>
-          </AnimFade>
           <AnimFade direction="up" delay={0.13}>
             <h6 className="text-xl text-primary">
               Organic mushroom cultivation process:
@@ -259,6 +195,49 @@ const ProjectList = () => {
             </ul>
           </AnimFade>
 
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 w-full mt-4">
+            {[
+              '/projects/14.jpg',
+              '/projects/15.jpg',
+              '/projects/18.jpg',
+              '/projects/19.jpg',
+            ].map((img, idx) => (
+              <AnimFade key={idx} direction="up" delay={0.1 * idx}>
+                <Image
+                  key={idx}
+                  src={img}
+                  width={400}
+                  height={400}
+                  alt="Mush-Room Of Love"
+                  className="h-auto w-full object-cover object-center"
+                />
+              </AnimFade>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="fluid-container pb-10">
+        <AnimFade direction="up">
+          <h3 className="section-heading text-center">
+            &quot;JOYFUL SUMMER TUNES&quot; PROJECT
+          </h3>
+        </AnimFade>
+        <div className="mt-4 text-justify flex flex-col gap-2">
+          <AnimFade direction="up" delay={0.1}>
+            <p>
+              From the very first moment I stepped onto the farm, I was captivated by the
+              lush, soothing environment, where hundreds of mushroom beds of various types
+              were in full bloom. I personally selected growing mushroom beds, gently
+              watered them, and felt as if I was transmitting a powerful life energy from
+              mother earth to each mushroom sprout. 🌱 The mushroom farming experience not
+              only brought endless joy but also allowed me to deeply understand patience
+              and how to connect with nature. Tending to them and watching the mushrooms
+              grow like my &apos;little children&apos; was a truly heartwarming and
+              full-of-anticipation experience! ✨
+            </p>
+          </AnimFade>
+
           <ImgCarousel
             images={[
               '/projects/1.jpg',
@@ -274,6 +253,28 @@ const ProjectList = () => {
             ]}
           />
         </div>
+      </div>
+
+      <div className="bg-white py-6 md:py-10">
+        <MyCarousel
+          components={projectCommunication.map((project) => (
+            <div
+              key={project.id}
+              className="block bg-white rounded-[4px] overflow-hidden w-full h-full"
+            >
+              <Image
+                src={project.img}
+                width={400}
+                height={400}
+                alt="Mush-Room Of Love"
+                className="h-auto w-full object-cover object-center"
+              />
+              <div className="px-4 py-2">
+                <p className="text-sm text-justify">{project.content}</p>
+              </div>
+            </div>
+          ))}
+        />
       </div>
     </div>
   );

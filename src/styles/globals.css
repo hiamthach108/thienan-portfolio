@@ -35,6 +35,14 @@
   .section-heading-hand {
     @apply font-hand text-7xl tracking-wider text-primary max-md:text-center max-[350px]:text-6xl lg:text-8xl;
   }
+
+  .position-center {
+    @apply left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform;
+  }
+
+  .page-container {
+    @apply min-h-screen pt-10 md:pt-36;
+  }
 }
 
 .swiper-slide {
