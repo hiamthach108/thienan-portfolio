@@ -57,7 +57,8 @@ const ImgCarousel = ({ images }: Props) => {
               src={image}
               alt=""
               className="w-full h-72 object-cover object-center"
-              fill={true}
+              width={400}
+              height={400}
             />
           </SwiperSlide>
         ))}
