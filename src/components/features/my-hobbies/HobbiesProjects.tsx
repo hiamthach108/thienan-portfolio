@@ -32,7 +32,7 @@ const projects: Project[] = [
     title: 'I SEE YOUR VOICE',
     description:
       'The charity concert raises funds for the "Bừng Sáng" shelter for the visually impaired, with donations exceeding 24,000,000 VND.',
-    sub: 'The "I Can See Your Voice" program will take place on June 1, 2024.',
+    sub: 'The "I See Your Voice" program will take place on June 1, 2024.',
     link: 'https://www.youtube.com/embed/OllhguKeWOo?si=jxNGmOKsJJmIr30e',
   },
   {
