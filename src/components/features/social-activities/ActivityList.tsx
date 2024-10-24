@@ -299,36 +299,38 @@ const list: {
 const ActivityList = () => {
   return (
     <div className="w-full">
-      <div className="flex flex-col">
+      <div className="w-full">
         {list.map((item, i) => {
           return (
             <div key={item.id} className={clsx('w-full', i % 2 !== 0 && 'bg-white')}>
-              <div className="flex flex-col gap-4 py-6 md:py-12 fluid-container">
-                <AnimFade direction="up">
-                  <h2 className="section-heading w-fit mx-auto text-center">
-                    {item.title}
-                  </h2>
-                </AnimFade>
-                <AnimFade
-                  direction="up"
-                  delay={0.1}
-                  className="flex flex-col gap-2 w-full xl:max-w-[80%] text-justify xl:w-fit mx-auto mb-3 md:mb-6"
-                >
-                  {item.content.map((content, index) => {
-                    return (
-                      <p key={index} className="text-sm md:text-base">
-                        {content}
-                      </p>
-                    );
-                  })}
-                </AnimFade>
-                <ImgCarousel
-                  images={
-                    item.images?.map((i) => {
-                      return item.prefix ? item.prefix + i : i;
-                    }) || []
-                  }
-                />
+              <div className="flex flex-col md:flex-row gap-4 md:gap-12 py-6 md:py-12 fluid-container items-center">
+                <div className="flex-1">
+                  <AnimFade direction="up">
+                    <h2 className="section-heading w-fit mb-2 text-xl">{item.title}</h2>
+                  </AnimFade>
+                  <AnimFade
+                    direction="up"
+                    delay={0.1}
+                    className="flex flex-col gap-1 w-full text-justify"
+                  >
+                    {item.content.map((content, index) => {
+                      return (
+                        <p key={index} className="text-sm ">
+                          {content}
+                        </p>
+                      );
+                    })}
+                  </AnimFade>
+                </div>
+                <div className="w-full md:w-[54%]">
+                  <ImgCarousel
+                    images={
+                      item.images?.map((i) => {
+                        return item.prefix ? item.prefix + i : i;
+                      }) || []
+                    }
+                  />
+                </div>
               </div>
             </div>
           );

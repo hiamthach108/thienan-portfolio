@@ -217,14 +217,12 @@ const ProjectList = () => {
         </div>
       </div>
 
-      <div className="fluid-container pb-10">
-        <AnimFade direction="up">
-          <h3 className="section-heading text-center">
-            &quot;JOYFUL SUMMER TUNES&quot; PROJECT
-          </h3>
-        </AnimFade>
-        <div className="mt-4 text-justify flex flex-col gap-2">
-          <AnimFade direction="up" delay={0.1}>
+      <div className="fluid-container pb-10 flex flex-col md:flex-row gap-4 md:gap-12 items-center">
+        <div className="flex-1">
+          <AnimFade direction="up">
+            <h3 className="section-heading">&quot;JOYFUL SUMMER TUNES&quot; PROJECT</h3>
+          </AnimFade>
+          <AnimFade direction="up" delay={0.1} className="mt-4 text-justify">
             <p>
               From the very first moment I stepped onto the farm, I was captivated by the
               lush, soothing environment, where hundreds of mushroom beds of various types
@@ -237,7 +235,8 @@ const ProjectList = () => {
               full-of-anticipation experience! ✨
             </p>
           </AnimFade>
-
+        </div>
+        <div className="w-[54%]">
           <ImgCarousel
             images={[
               '/projects/1.jpg',
