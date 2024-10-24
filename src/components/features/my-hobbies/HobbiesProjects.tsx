@@ -87,7 +87,7 @@ const ProjectCard = ({
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
-            className="h-[400px] w-full"
+            className="h-[400px] w-full rounded-img"
           ></iframe>
         </div>
         <p className="text-sm text-center italic">{project.sub}</p>

@@ -36,7 +36,7 @@ const HobbiesSports = () => {
                   alt="hobbies"
                   width={400}
                   height={300}
-                  className="object-center object-cover w-full h-full"
+                  className="object-center object-cover w-full h-full rounded-img"
                 />
               </AnimFade>
               <AnimFade direction="up" delay={0.1}>
@@ -45,7 +45,7 @@ const HobbiesSports = () => {
                   alt="hobbies"
                   width={400}
                   height={300}
-                  className="object-center object-cover w-full h-full"
+                  className="object-center object-cover w-full h-full rounded-img"
                 />
               </AnimFade>
               <AnimFade direction="up" delay={0.2}>
@@ -54,7 +54,7 @@ const HobbiesSports = () => {
                   alt="hobbies"
                   width={400}
                   height={300}
-                  className="object-center object-cover w-full h-auto"
+                  className="object-center object-cover w-full h-full rounded-img"
                 />
               </AnimFade>
             </div>

@@ -303,7 +303,7 @@ const ActivityList = () => {
         {list.map((item, i) => {
           return (
             <div key={item.id} className={clsx('w-full', i % 2 !== 0 && 'bg-white')}>
-              <div className="flex flex-col gap-4 py-6 md:py-16 fluid-container ">
+              <div className="flex flex-col gap-4 py-6 md:py-12 fluid-container">
                 <AnimFade direction="up">
                   <h2 className="section-heading w-fit mx-auto text-center">
                     {item.title}

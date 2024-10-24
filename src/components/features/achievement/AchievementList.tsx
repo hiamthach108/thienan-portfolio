@@ -10,7 +10,7 @@ const list = [
   {
     id: 1,
     contents: [
-      'I am honored to have just received the gold medal in the 1 Idea 1 Word Competition 2024!',
+      'I am honored to have just received the gold medal in the 1 Idea 1 World Competition 2024!',
       'A wave of emotions fills my heart, a strong sense of pride and happiness. This is not just an award; it is also a testament to the relentless journey of effort I have undertaken. This victory is a profound reminder that every innovative idea holds its unique value and can create a positive impact.',
       'This moment will undoubtedly provide me with strong motivation, encouraging me to continue learning and growing. I hope to achieve even more brilliant accomplishments in the future, turning my dreams into reality!',
     ],
@@ -73,7 +73,10 @@ const AchievementList = () => {
       <div className="flex flex-col gap-10">
         {list.map((item, i) => (
           <div
-            className={clsx('flex gap-2 items-center', i % 2 === 0 && 'flex-row-reverse')}
+            className={clsx(
+              'flex gap-2 items-center flex-col md:flex-row',
+              i % 2 === 0 && 'md:flex-row-reverse',
+            )}
             key={i}
           >
             <AnimSlide
@@ -89,7 +92,7 @@ const AchievementList = () => {
                 ))}
               </div>
             </AnimSlide>
-            <div className="w-1/3">
+            <div className="w-[80vw] md:w-1/3">
               <AnimSlide className="w-full h-auto" direction="right">
                 <Image
                   src={item.image[0]}
@@ -98,7 +101,7 @@ const AchievementList = () => {
                   width={500}
                   height={500}
                   objectFit="cover"
-                  className="rounded-sm w-full h-auto"
+                  className="w-full h-auto rounded-img"
                 />
               </AnimSlide>
             </div>

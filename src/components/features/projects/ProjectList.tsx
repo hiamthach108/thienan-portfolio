@@ -195,7 +195,7 @@ const ProjectList = () => {
             </ul>
           </AnimFade>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 w-full mt-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full mt-4">
             {[
               '/projects/14.jpg',
               '/projects/15.jpg',
@@ -209,7 +209,7 @@ const ProjectList = () => {
                   width={400}
                   height={400}
                   alt="Mush-Room Of Love"
-                  className="h-auto w-full object-cover object-center"
+                  className="h-auto w-full object-cover object-center rounded-img"
                 />
               </AnimFade>
             ))}
@@ -260,7 +260,7 @@ const ProjectList = () => {
           components={projectCommunication.map((project) => (
             <div
               key={project.id}
-              className="block bg-white rounded-[4px] overflow-hidden w-full h-full"
+              className="block bg-white overflow-hidden w-full h-full rounded-img"
             >
               <Image
                 src={project.img}

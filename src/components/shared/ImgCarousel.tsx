@@ -56,7 +56,7 @@ const ImgCarousel = ({ images }: Props) => {
             <Image
               src={image}
               alt=""
-              className="w-full h-72 object-cover object-center"
+              className="w-full h-64 object-cover object-center rounded-img"
               width={400}
               height={400}
             />

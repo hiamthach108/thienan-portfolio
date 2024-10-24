@@ -32,7 +32,7 @@ const AboutGoal = () => {
             src={'/about-me/5.jpg'}
             width={1200}
             height={900}
-            className="w-full h-auto object-cover object-center shadow-lg"
+            className="w-full h-auto object-cover object-center shadow-lg "
             alt="about me 5"
           />
         </AnimSlide>

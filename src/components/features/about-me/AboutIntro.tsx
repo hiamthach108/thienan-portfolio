@@ -8,24 +8,24 @@ const AboutIntro = () => {
   return (
     <div className="w-full py-10 md:py-16 bg-bg-sky text-center max-md:px-3">
       <div className="fluid-container flex gap-6 flex-col md:flex-row md:gap-10 items-end 2xl:px-24">
-        <div className="w-full md:w-[50%] flex gap-3 md:gap-6">
+        <div className="w-full md:w-[48%] flex gap-3 md:gap-4">
           <AnimFade direction="up" className="w-[50%] flex gap-5">
             <Image
               src={'/thienan.jpg'}
               width={800}
               height={600}
               alt="Nguyen Cao Thien An"
-              className="w-full h-auto object-center object-cover"
+              className="w-full h-auto object-center object-cover rounded-img"
             />
           </AnimFade>
-          <div className="flex flex-col gap-3 md:gap-6 flex-1">
+          <div className="flex flex-col gap-3 md:gap-4 flex-1">
             <AnimFade direction="down">
               <Image
                 src={'/about-me/3.jpg'}
                 width={300}
                 height={400}
                 alt="About me 1"
-                className="w-full h-auto object-center object-contain rounded-lg"
+                className="w-full h-auto object-center object-contain rounded-img"
               />
             </AnimFade>
             <AnimFade direction="up" delay={0.1}>
@@ -34,7 +34,7 @@ const AboutIntro = () => {
                 width={300}
                 height={400}
                 alt="About me 2"
-                className="w-full h-auto object-center object-contain rounded-lg"
+                className="w-full h-auto object-center object-contain rounded-img"
               />
             </AnimFade>
           </div>
@@ -48,7 +48,7 @@ const AboutIntro = () => {
             advanced and challenging learning environment, I have had the opportunity to
             cultivate essential skills and develop myself comprehensively.
           </p>
-          <p className="my-1 md:my-3 text-sm md:text-base text-gray-800 text-justify">
+          <p className="my-1 md:my-2 text-sm md:text-base text-gray-800 text-justify">
             Studying here not only helps me discover my hidden potential but also
             motivates me to continually strive for improvement, engage in healthy
             competition, and build resilience. Every day, I put in my best effort to make

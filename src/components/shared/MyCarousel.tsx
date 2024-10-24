@@ -52,7 +52,7 @@ const MyCarousel = ({ components }: Props) => {
         onSlideChange={({ realIndex }) => setCurrent(realIndex)}
       >
         {components.map((element, index) => (
-          <SwiperSlide key={index} className="w-full h-auto">
+          <SwiperSlide key={index} className="w-full h-auto pb-6">
             {element}
           </SwiperSlide>
         ))}

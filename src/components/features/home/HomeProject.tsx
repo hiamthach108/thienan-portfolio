@@ -20,7 +20,7 @@ const HomeProject = () => {
               alt="My Project"
               width={400}
               height={500}
-              className="aspect-square w-full h-auto object-cover object-center"
+              className="aspect-square w-full h-auto object-cover object-center rounded-img "
             />
           </AnimFade>
           <AnimFade delay={0.1} direction="up" className="w-full h-auto">
@@ -29,7 +29,7 @@ const HomeProject = () => {
               alt="My Project"
               width={400}
               height={300}
-              className="aspect-square w-full h-auto object-cover object-center"
+              className="aspect-square w-full h-auto object-cover object-center rounded-img "
             />
           </AnimFade>
           <AnimFade delay={0.14} direction="up" className="w-full h-auto">
@@ -38,7 +38,7 @@ const HomeProject = () => {
               alt="My Project"
               width={400}
               height={300}
-              className="aspect-square w-full h-auto object-cover object-center"
+              className="aspect-square w-full h-auto object-cover object-center rounded-img "
             />
           </AnimFade>
           <AnimFade delay={0.18} direction="up" className="w-full h-auto">
@@ -47,7 +47,7 @@ const HomeProject = () => {
               alt="My Project"
               width={400}
               height={300}
-              className="aspect-square w-full h-auto object-cover object-center"
+              className="aspect-square w-full h-auto object-cover object-center rounded-img "
             />
           </AnimFade>
           <AnimFade delay={0.22} direction="up" className="w-full h-auto">
@@ -56,7 +56,7 @@ const HomeProject = () => {
               alt="Project 1"
               width={400}
               height={300}
-              className="aspect-square w-full h-auto object-cover object-center"
+              className="aspect-square w-full h-auto object-cover object-center rounded-img "
             />
           </AnimFade>
           <AnimFade delay={0.26} direction="up" className="w-full h-auto">
@@ -65,7 +65,7 @@ const HomeProject = () => {
               alt="My Project"
               width={400}
               height={300}
-              className="aspect-square w-full h-auto object-cover object-center"
+              className="aspect-square w-full h-auto object-cover object-center rounded-img "
             />
           </AnimFade>
           <AnimFade delay={0.3} direction="up" className="w-full h-auto">
@@ -74,7 +74,7 @@ const HomeProject = () => {
               alt="My Project"
               width={400}
               height={300}
-              className="aspect-square w-full h-auto object-cover object-center"
+              className="aspect-square w-full h-auto object-cover object-center rounded-img "
             />
           </AnimFade>
           <AnimFade delay={0.34} direction="up" className="w-full h-auto">
@@ -83,7 +83,7 @@ const HomeProject = () => {
               alt="My Project"
               width={400}
               height={300}
-              className="aspect-square w-full h-auto object-cover object-center"
+              className="aspect-square w-full h-auto object-cover object-center rounded-img "
             />
           </AnimFade>
           <AnimFade delay={0.38} direction="up" className="w-full h-auto">
@@ -92,7 +92,7 @@ const HomeProject = () => {
               alt="My Project"
               width={400}
               height={300}
-              className="aspect-square w-full h-auto object-cover object-center"
+              className="aspect-square w-full h-auto object-cover object-center rounded-img "
             />
           </AnimFade>
           <AnimFade delay={0.42} direction="up" className="w-full h-auto">
@@ -101,7 +101,7 @@ const HomeProject = () => {
               alt="My Project"
               width={400}
               height={300}
-              className="aspect-square w-full h-auto object-cover object-center"
+              className="aspect-square w-full h-auto object-cover object-center rounded-img "
             />
           </AnimFade>
         </div>
