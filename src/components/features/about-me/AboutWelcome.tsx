@@ -38,7 +38,7 @@ const AboutWelcome = () => {
             width={800}
             height={600}
             alt="Welcome to my world"
-            className="md:rounded-3xl object-cover object-center w-full h-auto"
+            className="rounded-3xl object-cover object-center w-full h-auto"
           />
         </AnimFade>
 

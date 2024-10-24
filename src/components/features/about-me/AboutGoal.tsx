@@ -38,7 +38,7 @@ const AboutGoal = () => {
         </AnimSlide>
       </div>
 
-      <div className="w-full bg-white py-10">
+      <div className="w-full bg-white py-10 px-2">
         <div className="text-center">
           <h3 className="section-heading-hand text-6xl">Life Motto</h3>
           <p className="italic text-lg mt-3 text-gray-700">

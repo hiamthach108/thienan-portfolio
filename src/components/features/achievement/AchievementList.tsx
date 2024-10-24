@@ -30,7 +30,7 @@ const list = [
       'After a period of thorough preparation and study, I feel very fortunate to have won a Silver Medal in the Young Achiever Business Olympiad 2024.',
       'I will take the experience from this competition to continue participating in future contests related to economics and business.',
     ],
-    image: ['/achievements/youngachiever.jpg'],
+    image: ['/achievements/silver.jpg'],
   },
   {
     id: 4,
