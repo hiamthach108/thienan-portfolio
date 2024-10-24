@@ -8,7 +8,7 @@ const Btn = ({ className, ...props }: React.ButtonHTMLAttributes<HTMLButtonEleme
   return (
     <button
       className={clsx(
-        'px-8 py-3 border-none cursor-pointer bg-primary outline-none font-sans text-base text-bg hover:opacity-75',
+        'px-8 py-3 border-none cursor-pointer bg-primary outline-none font-sans text-base text-bg hover:opacity-75 rounded-full',
         className,
       )}
       {...props}
