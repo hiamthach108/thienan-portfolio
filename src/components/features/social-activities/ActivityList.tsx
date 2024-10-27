@@ -38,7 +38,7 @@ const list: {
   },
   {
     id: 2,
-    title: 'Dem nhac gay quy \n "I SEE YOUR VOICE"',
+    title: 'Fund-raising concert \n "I SEE YOUR VOICE"',
     content: [
       'I participated in selling dried mangoes, peanuts, and tickets for a charity concert to raise funds for the children at the "Bừng Sáng" shelter for the visually impaired. It feels so heartwarming to know that thanks to my efforts and those of others, over 24 million VND has been donated! I feel very proud to have contributed my small part to such a meaningful goal.',
       'Not only did I sell items to raise funds, but I also performed on the violin during the fundraising concert on June 1, 2024. Everyone listened attentively, and I felt that I was able to convey my music and love to the children.',
@@ -164,8 +164,10 @@ const list: {
   },
   {
     id: 5,
-    title: 'An Giang',
-    content: [],
+    title: 'Hues of Spring',
+    content: [
+      'Organized the “Hues of Spring” Tet Festival, bringing vibrant Tet celebrations to students in Cu Chi, HCMC. Led cultural performances, interactive activities, and setup, raising over 25 million VND for the school’s education fund, supporting New Year supplies and scholarships for disadvantaged students.',
+    ],
     images: [
       'IMG_1878.JPG',
       'IMG_1880.JPG',
@@ -194,7 +196,9 @@ const list: {
   {
     id: 6,
     title: 'School Performing',
-    content: [],
+    content: [
+      'Attended the AHS dance team. Practice "Rewrite the Stars" by Anne-Marie and James Arthur for the graduating class of 2024.',
+    ],
     images: [
       'DSC06811.jpeg',
       'DSC06813.jpeg',
@@ -215,7 +219,9 @@ const list: {
   {
     id: 7,
     title: 'Young Acheiver Business Olympiad 2024',
-    content: [],
+    content: [
+      'Attended YABO 2024 in Singapore, participating in masterclasses on sustainable development goals and collaborating with an international team to create a simulated sustainable tourism company, "AA Travel." The team strategized eco-friendly tour packages, advancing through multiple competition rounds and securing second place overall, along with the Silver Award and the Business Pitch & Roadshow Award for a personalized eco-tourism concept in Vietnam.',
+    ],
     images: [
       '0bbd37bc2d5c8a02d34d.jpg',
       '0e37df7d0f8ba8d5f19a.jpg',
@@ -262,7 +268,9 @@ const list: {
   {
     id: 8,
     title: 'Echoes of Culture',
-    content: [],
+    content: [
+      'Attended Model United Nations at DAV Open Simulation 2024: Echoes of Culture. Joined The UN  Economic and Social Council (ECOSOC) as a Delegate of New Zealand, discussing the topic “Enhancing the minorities’ rights to natural resources.”',
+    ],
     images: [
       'z5952625343907_56cfdc572d8368c00dfc718538237e90.jpg',
       'z5952625343983_154e4a922c52c82bdc8b1faec9546d9f.jpg',
@@ -276,7 +284,9 @@ const list: {
   {
     id: 9,
     title: 'History Class',
-    content: [],
+    content: [
+      'With the topic of "Cultural Interweaving Among ASEAN Nations," our team chose to present on Thai culture and cuisine. I took on the role of team leader and lead presenter.',
+    ],
     images: [
       'z5952624675445_d4e23cc4ef673a67e22258974ea8bb63.jpg',
       'z5952624675546_00d7f1b2338804364013e09cc060aefe.jpg',
