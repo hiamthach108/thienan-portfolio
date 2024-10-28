@@ -160,7 +160,7 @@ const ProjectList = () => {
             </h6>
           </AnimFade>
           <AnimFade direction="up" delay={0.16}>
-            <ul className="pl-6 mb-4">
+            <ol className="pl-6 mb-4">
               <li>
                 Preparing the space: Create a lush, airy environment for growing
                 mushrooms, with soft light and the right humidity.
@@ -192,7 +192,7 @@ const ProjectList = () => {
                 harvest them, and feel the happiness of seeing the fully grown mushroom
                 beds.
               </li>
-            </ul>
+            </ol>
           </AnimFade>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full mt-4">
