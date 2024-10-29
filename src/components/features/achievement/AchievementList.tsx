@@ -22,7 +22,7 @@ const list = [
       'The StemCo International Math and Science Competitions are held annually in Singapore by Mosaic Global Pte Ltd, located at 402 Joo Chiat Place, Singapore.',
       'The competition was first held in Singapore in 2014 and has since attracted tens of thousands of participants. I was fortunate to win a silver medal in this prestigious competition.',
     ],
-    image: ['/achievements/StemCo.jpg'],
+    image: ['/achievements/math.jpg'],
   },
   {
     id: 3,
@@ -64,6 +64,16 @@ const list = [
       'By participating in this competition, I have gained a wealth of valuable knowledge about entrepreneurship, innovative thinking, and how to develop unique business ideas. Additionally, I had the opportunity to meet and make friends with many international peers from all over the world.',
     ],
     image: ['/achievements/blue-ocean.jpg'],
+  },
+  {
+    id: 8,
+    contents: ['ASEAN Student’s Forum 2024'],
+    image: ['/achievements/asean-students-forum.jpg'],
+  },
+  {
+    id: 9,
+    contents: ['Australian Mathematics Competitions'],
+    image: ['/achievements/australian-mathematics-competition.jpg'],
   },
 ];
 
