@@ -317,6 +317,22 @@ const list: {
     prefix:
       'https://storage.googleapis.com/staging.thach-personal.appspot.com/thienan/social-activities/history-class/',
   },
+  {
+    id: 10,
+    title: 'MUN Conference in Asian School',
+    content: [],
+    images: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg'],
+    prefix:
+      'https://storage.googleapis.com/staging.thach-personal.appspot.com/thienan/social-activities/mun-conference/',
+  },
+  {
+    id: 11,
+    title: 'Gemadef Run',
+    content: [],
+    images: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg'],
+    prefix:
+      'https://storage.googleapis.com/staging.thach-personal.appspot.com/thienan/social-activities/gemadeft-run/',
+  },
 ];
 
 const ActivityList = () => {
