@@ -29,6 +29,7 @@ const config: Config = {
         sans: ['Source Serif 4', 'serif'],
         heading: ['Bree Serif', 'serif'],
         hand: ['Allison', 'cursive'],
+        hand2: ['Elika Gorica', 'serif'],
       },
     },
   },

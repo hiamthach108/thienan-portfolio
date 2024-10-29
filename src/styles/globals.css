@@ -3,6 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Elika Gorica';
+  src: url('/fonts/Elika Gorica.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Source Serif 4', serif;
@@ -34,6 +41,10 @@
 
   .section-heading-hand {
     @apply font-hand text-7xl tracking-wider text-primary max-md:text-center max-[350px]:text-6xl lg:text-8xl;
+  }
+
+  .section-heading-hand2 {
+    @apply font-hand2 text-4xl tracking-wider text-primary max-md:text-center max-[350px]:text-3xl lg:text-5xl;
   }
 
   .position-center {

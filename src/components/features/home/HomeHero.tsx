@@ -20,7 +20,7 @@ const HomeHero = () => {
 
         <div className="">
           <AnimFade direction="up" delay={0.1}>
-            <h3 className="text-center max-[350px]:text-6xl text-7xl lg:text-8xl text-primary font-heading tracking-[16px]">
+            <h3 className="text-center max-[350px]:text-4xl text-5xl lg:text-6xl text-primary font-hand2 tracking-[16px]">
               VITAL
             </h3>
           </AnimFade>
@@ -29,9 +29,9 @@ const HomeHero = () => {
             <AnimFade
               direction="up"
               delay={0.13}
-              className="text-justify italic flex gap-1 items-center text-xs md:text-sm lg:text-base"
+              className="text-justify flex gap-1 items-center text-xs md:text-sm lg:text-base"
             >
-              <span className="text-4xl lg:text-5xl w-14 lg:w-12 text-center inline-block font-hand h-16">
+              <span className="text-4xl lg:text-5xl w-14 lg:w-12 text-center inline-block font-hand2 h-16">
                 V
               </span>
               <span>
@@ -42,9 +42,9 @@ const HomeHero = () => {
             <AnimFade
               direction="up"
               delay={0.15}
-              className="text-justify italic flex gap-1 items-center text-xs md:text-sm lg:text-base"
+              className="text-justify flex gap-1 items-center text-xs md:text-sm lg:text-base"
             >
-              <span className="text-4xl lg:text-5xl w-14 lg:w-12 text-center inline-block font-hand h-16">
+              <span className="text-4xl lg:text-5xl w-14 lg:w-12 text-center inline-block font-hand2 h-16">
                 I
               </span>
               <span className="">
@@ -55,9 +55,9 @@ const HomeHero = () => {
             <AnimFade
               direction="up"
               delay={0.2}
-              className="text-justify italic flex gap-1 items-center text-xs md:text-sm lg:text-base"
+              className="text-justify flex gap-1 items-center text-xs md:text-sm lg:text-base"
             >
-              <span className="text-4xl lg:text-5xl w-14 lg:w-12 text-center inline-block font-hand h-16">
+              <span className="text-4xl lg:text-5xl w-14 lg:w-12 text-center inline-block font-hand2 h-16">
                 T
               </span>
               <span>
@@ -68,9 +68,9 @@ const HomeHero = () => {
             <AnimFade
               direction="up"
               delay={0.24}
-              className="text-justify italic flex gap-1 items-center text-xs md:text-sm lg:text-base"
+              className="text-justify flex gap-1 items-center text-xs md:text-sm lg:text-base"
             >
-              <span className="text-4xl lg:text-5xl w-14 lg:w-12 text-center inline-block font-hand h-16">
+              <span className="text-4xl lg:text-5xl w-14 lg:w-12 text-center inline-block font-hand2 h-16">
                 A
               </span>
               <span>
@@ -81,9 +81,9 @@ const HomeHero = () => {
             <AnimFade
               direction="up"
               delay={0.28}
-              className="text-justify italic flex gap-1 items-center text-xs md:text-sm lg:text-base"
+              className="text-justify flex gap-1 items-center text-xs md:text-sm lg:text-base"
             >
-              <span className="text-4xl lg:text-5xl w-14 lg:w-12 text-center inline-block font-hand h-16">
+              <span className="text-4xl lg:text-5xl w-14 lg:w-12 text-center inline-block font-hand2 h-16">
                 L
               </span>
               <span>

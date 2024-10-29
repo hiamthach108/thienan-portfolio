@@ -10,7 +10,7 @@ const AboutWelcome = () => {
       <div className="fluid-container flex flex-col-reverse md:flex-row gap-3 lg:gap-10 items-center 2xl:px-24">
         <div className="flex-1">
           <AnimFade direction="down" className="max-md:hidden">
-            <h1 className="section-heading-hand">Welcome to my world</h1>
+            <h1 className="section-heading-hand2">Welcome to my world</h1>
           </AnimFade>
           <AnimFade direction="down" delay={0.1}>
             <p className="text-justify text-base xl:text-lg md:mt-6 mb-3 font-normal text-gray-600">
@@ -43,7 +43,7 @@ const AboutWelcome = () => {
         </AnimFade>
 
         <AnimFade direction="down" className="md:hidden">
-          <h1 className="section-heading-hand">Welcome to my world</h1>
+          <h1 className="section-heading-hand2 ">Welcome to my world</h1>
         </AnimFade>
       </div>
     </div>
