@@ -29,6 +29,7 @@ const HobbiesSports = () => {
               </p>
             </AnimFade>
 
+            <h4 className="section-heading text-2xl text-primary">Run to Heart 2024</h4>
             <div className="flex-1 grid gap-4 grid-cols-1 md:grid-cols-3">
               <AnimFade direction="up">
                 <Image
@@ -51,6 +52,45 @@ const HobbiesSports = () => {
               <AnimFade direction="up" delay={0.2}>
                 <Image
                   src={'/hobbies/3.jpg'}
+                  alt="hobbies"
+                  width={400}
+                  height={300}
+                  className="object-center object-cover w-full h-full rounded-img"
+                />
+              </AnimFade>
+            </div>
+
+            <h4 className="section-heading text-2xl text-primary">
+              GEMADEPT RUN – THE WAY FORWARD 2024
+            </h4>
+            <div className="flex-1 grid gap-4 grid-cols-1 md:grid-cols-3">
+              <AnimFade direction="up">
+                <Image
+                  src={
+                    'https://storage.googleapis.com/staging.thach-personal.appspot.com/thienan/social-activities/gemadeft-run/2.jpg'
+                  }
+                  alt="hobbies"
+                  width={400}
+                  height={300}
+                  className="object-center object-cover w-full h-full rounded-img"
+                />
+              </AnimFade>
+              <AnimFade direction="up" delay={0.1}>
+                <Image
+                  src={
+                    'https://storage.googleapis.com/staging.thach-personal.appspot.com/thienan/social-activities/gemadeft-run/3.jpg'
+                  }
+                  alt="hobbies"
+                  width={400}
+                  height={300}
+                  className="object-center object-cover w-full h-full rounded-img"
+                />
+              </AnimFade>
+              <AnimFade direction="up" delay={0.2}>
+                <Image
+                  src={
+                    'https://storage.googleapis.com/staging.thach-personal.appspot.com/thienan/social-activities/gemadeft-run/6.jpg'
+                  }
                   alt="hobbies"
                   width={400}
                   height={300}
