@@ -1,12 +1,16 @@
 import React from 'react';
 
+import AnimFade from '@/components/features/animation/AnimFade';
 import Songs from '@/components/features/my-songs/Songs';
 
 const page = () => {
   return (
     <div className="min-h-screen text-center relative page-container ">
       <div className="section-heading-hand2">MY SONGS</div>
-      <div className="my-6 flex flex-col gap-3 text-left fluid-container">
+      <AnimFade
+        direction="left"
+        className="flex flex-col gap-3 text-left fluid-container"
+      >
         <p>
           🌟 My obsession for music does not merely sway upon the dancing notes on the
           strings of my violin; it pulses within my desire to create those beautiful
@@ -24,10 +28,15 @@ const page = () => {
           arose within me: I wanted to transform those raw, unharmonised sounds into a
           complete work, filled with spirit and soul.
         </p>
-      </div>
+      </AnimFade>
       <div className="fluid-container">
         <Songs />
-        <div className="my-6 ">
+
+        <div className="italic text-primary text-9xl font-heading text-center mr-5 h-fit leading-3 pt-20 py-8">
+          &quot;
+        </div>
+
+        <AnimFade direction="up" className="text-justify bg-white shadow-lg p-8">
           🌼 For me, music is far more than an art form or mere entertainment. It is a
           driving force, an invisible thread that binds people together, regardless of
           age, gender, or background. Through every note, I hope people can come together,
@@ -35,7 +44,7 @@ const page = () => {
           unity. Music is like a miracle—a gift I long to share with everyone. It’s this
           vision that inspires me to keep composing, to paint vibrant pictures woven with
           magical melodies.
-        </div>
+        </AnimFade>
       </div>
     </div>
   );
