@@ -105,7 +105,9 @@ const AchievementList = () => {
               direction="left"
               className="flex-1 p-3 xl:p-8 pt-0 text-left relative"
             >
-              <h5 className="section-heading-hand">0{item.id}</h5>
+              <h5 className="section-heading-hand">
+                {item.id < 10 ? `0${item.id}` : item.id}
+              </h5>
               <div className="flex flex-col gap-2 mt-2">
                 {item.contents.map((content, j) => (
                   <p key={j} className="text-base text-justify">

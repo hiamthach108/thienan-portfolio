@@ -51,7 +51,7 @@ const HobbiesSports = () => {
               </AnimFade>
               <AnimFade direction="up" delay={0.2}>
                 <Image
-                  src={'/hobbies/3.jpg'}
+                  src={'/hobbies/4.jpg'}
                   alt="hobbies"
                   width={400}
                   height={300}
