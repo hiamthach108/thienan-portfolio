@@ -22,7 +22,7 @@ const projects: Project[] = [
     id: 1,
     title: "A MIDSUMMER NIGHT'S DREAM",
     description:
-      'The concert will take place on August 11, 2024, at Air Strings - Violin Choir.',
+      'The concert took place on August 11, 2024, at Air Strings - Violin Choir.',
     sub: 'The song is titled: Oblivion - Astor Piazzolla.',
     link: 'https://www.youtube.com/embed/8GTjWSfMOck?si=08KT_IiDRptU9pbz',
   },
@@ -38,7 +38,8 @@ const projects: Project[] = [
   {
     id: 3,
     title: 'WINTER WONDERLAND 2023',
-    description: 'The concert will take place on [date] at Air Strings - Violin Choir.',
+    description:
+      'The concert will take place on December 2023 at Air Strings - Violin Choir.',
     sub: 'The song is titled: Hallelujah - Leonard Cohen.',
     link: 'https://www.youtube.com/embed/XKKpOiThKb8?si=IH6u-gGw-OLj-mMT',
   },

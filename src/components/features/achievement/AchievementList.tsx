@@ -67,12 +67,17 @@ const list = [
   },
   {
     id: 8,
-    contents: ['ASEAN Student’s Forum 2024'],
+    contents: [
+      'The ASEAN Students’ Forum 2024 offers an invaluable platform for students to develop essential skills in communication, collaboration, and global cultural awareness. This year, alongside the Singapore-Vietnam Students’ Forum (SVSF), two new forums—the Singapore-Philippines Students’ Forum (SPSF) and the Singapore-Indonesia Students’ Forum (SISF)—are introduced to enhance international connections, cultural exchange, and lasting friendships among students and educators across the ASEAN region.',
+    ],
     image: ['/achievements/asean-students-forum.jpg'],
   },
   {
     id: 9,
-    contents: ['Australian Mathematics Competitions'],
+    contents: [
+      'First run in 1978, the Australian Mathematics Competition is Australia’s longest-running, largest, and most well-known maths competition for school students.',
+      'The AMC contains unique problems designed each year by leading educators and academics to challenge and extend your students’ problem-solving skills.',
+    ],
     image: ['/achievements/australian-mathematics-competition.jpg'],
   },
 ];

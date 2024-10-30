@@ -321,7 +321,9 @@ const list: {
   {
     id: 10,
     title: 'MUN Conference in Asian School',
-    content: [],
+    content: [
+      'Participated in the General Assembly as a Delegate of the Maldives. Discussed and debating about the topic "Transforming to Renewable Energy". Develop initiatives that guarantee a stable translation to renewable energy such as wind, solar, and wave energy, etc. While also compensating for loss and damage to related countries.',
+    ],
     images: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg'],
     prefix:
       'https://storage.googleapis.com/staging.thach-personal.appspot.com/thienan/social-activities/mun-conference/',
