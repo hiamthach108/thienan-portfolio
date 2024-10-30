@@ -102,67 +102,69 @@ const HobbiesProjects = () => {
   const [active, setActive] = useState<Project>(projects[0]);
 
   return (
-    <div
-      className="py-6 md:py-16 fluid-container text-center h-min scroll-smooth"
-      id="hobbies-project"
-    >
-      {/* <h2 className="section-heading text-center">Projects</h2> */}
+    <div className="bg-[#27384c] text-white w-full h-fit">
+      <div
+        className="py-6 md:py-16 fluid-container text-center h-min scroll-smooth "
+        id="hobbies-project"
+      >
+        {/* <h2 className="section-heading text-center">Projects</h2> */}
 
-      <Image
-        src="/violin-hobbies.png"
-        alt="Violin"
-        width={120}
-        height={120}
-        className="mx-auto"
-      />
+        <Image
+          src="/violin-hobbies.png"
+          alt="Violin"
+          width={120}
+          height={120}
+          className="mx-auto"
+        />
 
-      <div className="max-md:hidden flex gap-10 max-w-[1024px] mx-auto mt-10 w-full relative">
-        <div className="w-1/3 text-left h-screen sticky top-0">
-          <div className="sticky top-[200px] left-0 z-10 w-full">
-            <h5 className="section-heading-hand">0{active.id}</h5>
-            <h6 className="text-xl font-heading">{active.title}</h6>
-            <p className="text-base">{active.description}</p>
+        <div className="max-md:hidden flex gap-10 max-w-[1024px] mx-auto mt-10 w-full relative">
+          <div className="w-1/3 text-left h-screen sticky top-0">
+            <div className="sticky top-[200px] left-0 z-10 w-full">
+              <h5 className="section-heading-hand">0{active.id}</h5>
+              <h6 className="text-xl font-heading">{active.title}</h6>
+              <p className="text-base">{active.description}</p>
+            </div>
+          </div>
+          <div className="flex-1">
+            {projects.map((p) => {
+              return <ProjectCard project={p} setActive={setActive} key={p.id} />;
+            })}
           </div>
         </div>
-        <div className="flex-1">
+
+        <div className="md:hidden flex flex-col gap-10 mx-auto mt-10 relative">
           {projects.map((p) => {
-            return <ProjectCard project={p} setActive={setActive} key={p.id} />;
+            return (
+              <div
+                className="flex flex-col md:flex-row gap-2 md:gap-10 w-full py-5"
+                key={p.id}
+              >
+                <div className="w-full md:w-1/3 text-left">
+                  <h5 className="section-heading-hand">0{p.id}</h5>
+                  <h6 className="text-xl font-heading">{p.title}</h6>
+                  <p className="text-base">{p.description}</p>
+                </div>
+
+                <div className="flex-1">
+                  <div className="aspect-w-16 aspect-h-9 mt-1">
+                    <iframe
+                      width="700"
+                      height="400"
+                      src={p.link}
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                      className="h-[400px] w-full"
+                    ></iframe>
+                  </div>
+                  <p className="text-sm text-center italic">{p.sub}</p>
+                </div>
+              </div>
+            );
           })}
         </div>
-      </div>
-
-      <div className="md:hidden flex flex-col gap-10 mx-auto mt-10 relative">
-        {projects.map((p) => {
-          return (
-            <div
-              className="flex flex-col md:flex-row gap-2 md:gap-10 w-full py-5"
-              key={p.id}
-            >
-              <div className="w-full md:w-1/3 text-left">
-                <h5 className="section-heading-hand">0{p.id}</h5>
-                <h6 className="text-xl font-heading">{p.title}</h6>
-                <p className="text-base">{p.description}</p>
-              </div>
-
-              <div className="flex-1">
-                <div className="aspect-w-16 aspect-h-9 mt-1">
-                  <iframe
-                    width="700"
-                    height="400"
-                    src={p.link}
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                    className="h-[400px] w-full"
-                  ></iframe>
-                </div>
-                <p className="text-sm text-center italic">{p.sub}</p>
-              </div>
-            </div>
-          );
-        })}
       </div>
     </div>
   );
