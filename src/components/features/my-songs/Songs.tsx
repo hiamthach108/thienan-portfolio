@@ -5,9 +5,9 @@ import AnimFade from '../animation/AnimFade';
 const Songs = () => {
   return (
     <div className="flex flex-col gap-10">
-      <div className="py-4 px-10 rounded-2xl bg-[#27384c] text-center text-white">
+      <div className="py-4 md:px-10 px-5 rounded-2xl bg-[#27384c] text-center text-white">
         <h3 className="section-heading text-center font-hand2">Bay</h3>
-        <div className="flex gap-4 mt-6">
+        <div className="flex flex-col md:flex-row gap-4 mt-6">
           <AnimFade
             direction="left"
             className="my-4 flex flex-col gap-2 text-left flex-1"
@@ -81,10 +81,10 @@ const Songs = () => {
           </div>
         </div>
       </div>
-      <div className="py-4 px-10 rounded-2xl bg-[#27384c] text-center text-white">
+      <div className="py-4 md:px-10 px-5 rounded-2xl bg-[#27384c] text-center text-white">
         <h3 className="section-heading text-center font-hand2">Embrace</h3>
         <div className="flex gap-4 mt-6">
-          <div className="flex gap-6">
+          <div className="flex gap-6 flex-col md:flex-row">
             <AnimFade direction="left" className="flex flex-col gap-2 text-left flex-1">
               <p>
                 ✨ Then, I suddenly realized that youth is fleeting. In the blink of an
