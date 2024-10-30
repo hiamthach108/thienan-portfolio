@@ -80,6 +80,13 @@ const list = [
     ],
     image: ['/achievements/australian-mathematics-competition.jpg'],
   },
+  {
+    id: 10,
+    contents: [
+      'ChemiCo is an international Olympiad-style Chemistry competition that is part of the StemCo framework. It is designed to catalyze students’ discovery and development of competencies essential in the globalized world through expertly crafted tools.',
+    ],
+    image: ['/achievements/chemistrystemco.jpg'],
+  },
 ];
 
 const AchievementList = () => {
