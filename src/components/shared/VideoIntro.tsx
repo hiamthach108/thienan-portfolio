@@ -5,7 +5,7 @@ const VideoIntro = ({ children }: { children?: ReactNode }) => {
     <div className="relative h-screen w-full object-cover object-center">
       <video autoPlay loop muted className="w-full h-full object-cover object-center">
         <source
-          src="https://storage.googleapis.com/staging.thach-personal.appspot.com/thienan/social-activities/thienan.mp4"
+          src="https://storage.googleapis.com/thach-personal.appspot.com/thienan/thienan.mp4"
           type="video/mp4"
         />
       </video>
