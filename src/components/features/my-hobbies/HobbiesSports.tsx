@@ -66,9 +66,7 @@ const HobbiesSports = () => {
             <div className="flex-1 grid gap-4 grid-cols-1 md:grid-cols-3">
               <AnimFade direction="up">
                 <Image
-                  src={
-                    'https://storage.googleapis.com/staging.thach-personal.appspot.com/thienan/social-activities/gemadeft-run/2.jpg'
-                  }
+                  src={'/hobbies/gemadeft-run/2.jpg'}
                   alt="hobbies"
                   width={400}
                   height={300}
@@ -77,9 +75,7 @@ const HobbiesSports = () => {
               </AnimFade>
               <AnimFade direction="up" delay={0.1}>
                 <Image
-                  src={
-                    'https://storage.googleapis.com/staging.thach-personal.appspot.com/thienan/social-activities/gemadeft-run/3.jpg'
-                  }
+                  src={'/hobbies/gemadeft-run/3.jpg'}
                   alt="hobbies"
                   width={400}
                   height={300}
@@ -88,9 +84,7 @@ const HobbiesSports = () => {
               </AnimFade>
               <AnimFade direction="up" delay={0.2}>
                 <Image
-                  src={
-                    'https://storage.googleapis.com/staging.thach-personal.appspot.com/thienan/social-activities/gemadeft-run/6.jpg'
-                  }
+                  src={'/hobbies/gemadeft-run/6.jpg'}
                   alt="hobbies"
                   width={400}
                   height={300}
