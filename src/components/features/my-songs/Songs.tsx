@@ -30,7 +30,7 @@ const Songs = () => {
           <AnimFade direction="right" className="flex-1">
             <video className="w-full h-auto aspect-video rounded-img" controls>
               <source
-                src="https://storage.googleapis.com/thach-personal.appspot.com/thienan/songs/bay.mov"
+                src="https://storage.googleapis.com/thach-personal.appspot.com/thienan/songs/bay-mv.mov"
                 type="video/mp4"
               />
             </video>
@@ -107,7 +107,7 @@ const Songs = () => {
             <AnimFade direction="right" className="flex-1">
               <video className="w-full h-auto aspect-video rounded-img" controls>
                 <source
-                  src="https://storage.googleapis.com/thach-personal.appspot.com/thienan/songs/embrace1.mp4"
+                  src="https://storage.googleapis.com/thach-personal.appspot.com/thienan/songs/embrace-mv.mov"
                   type="video/mp4"
                 />
               </video>
