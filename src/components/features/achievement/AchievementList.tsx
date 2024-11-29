@@ -87,6 +87,13 @@ const list = [
     ],
     image: ['/achievements/chemistrystemco.jpg'],
   },
+  {
+    id: 11,
+    contents: [
+      'With a passion for exploring concepts far beyond ordinary mathematics and a strong desire driving me to study physical phenomena, the Earth, the solar system, and this vast universe, I registered for and won the Gold Medal in the Copernicus Natural Science Preliminary round!',
+    ],
+    image: ['/achievements/copernicus.jpg'],
+  },
 ];
 
 const AchievementList = () => {
